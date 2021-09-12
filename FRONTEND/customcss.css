@@ -1,0 +1,38 @@
+:root{
+    --wrapper-width: 70vw;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+
+    max-width: var(--wrapper-width);
+}
+
+input::placeholder{
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.required-field::after{
+    content: " *";
+    color: red;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: var(--wrapper-width);
+
+    padding-right: 2vw;
+    padding-left: 2vw;
+}

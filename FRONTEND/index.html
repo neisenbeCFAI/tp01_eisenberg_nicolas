@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>TP01 - Nicolas Eisenberg</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="customcss.css">
+
+</head>
+<body>
+<header>
+    <h1 class="main-title">MET002 - TP01 - Nicolas Eisenberg</h1>
+</header>
+<nav>
+    <a href="#">Home</a>
+</nav>
+<div id="wrapper">
+
+    <div class="row">
+        <h4>Saisie d'un compte client</h4>
+    </div>
+    <div>
+        <form class="needs-validation" novalidate>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="nom" class="form-label required-field">Nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom" placeholder="Dupont" required>
+                    <div class="invalid-feedback">Un nom de famille est requis</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="prenom" class="form-label required-field">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Richard" required>
+                    <div class="invalid-feedback">Un prénom est requis</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 mb-3">
+                    <label for="adresse" class="form-label required-field">Adresse</label>
+                    <input type="text" class="form-control" id="adresse" name="adresse" placeholder="5 rue des Roses"
+                           required>
+                    <div class="invalid-feedback">Une adresse valide est requise</div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="cp" class="form-label required-field">Code Postal</label>
+                    <input type="text" class="form-control" name="cp" id="cp" placeholder="67000" required>
+                    <div class="invalid-feedback">Un Code Postal valide est requis</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="ville" class="form-label required-field">Ville</label>
+                    <input type="text" class="form-control" id="ville" name="ville" placeholder="Strasbourg" required>
+                    <div class="invalid-feedback">Un nom de ville est requis</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="tel" class="form-label required-field">Téléphone</label>
+                    <input type="tel" pattern="[0-9]{10}" class="form-control" id="tel" name="tel"
+                           placeholder="0388786565" required>
+                    <div class="invalid-feedback">Un numéro de téléphone valide est requis</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label required-field">Genre</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="genre" id="genreM" value="Homme" required>
+                        <label class="form-check-label" for="genreM">Homme</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="genre" id="genreF" value="Homme" required>
+                        <label class="form-check-label" for="genreF">Femme</label>
+                    </div>
+                    <div class="invalid-feedback">Un genre est requis</div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-3">
+                    <label for="pseudo" class="form-label required-field">Pseudonyme</label>
+                    <input type="text" class="form-control" name="pseudo" id="pseudo" required>
+                    <div class="invalid-feedback">Une adresse valide est requise</div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-3">
+                    <label for="passwd" class="form-label required-field">Mot de passe</label>
+                    <input type="password" class="form-control" id="passwd" name="passwd" required>
+                    <div class="invalid-feedback">Mot de passe invalide. 1 minuscule, 1 majuscule, 1 chiffre, 1
+                        caractère spécial, 8 longueur min.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    <p class="footer">This is the footer</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="formvalidation.js"></script>
+</body>
+</html>
